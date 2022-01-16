@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_edit"
+        android:background="@color/white">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:background="@color/white"
+                    android:layout_margin="5dp" />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            <ImageButton
+                    android:id="@+id/button_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/commit"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center" />
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/text_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dialog_hint"
+                android:textSize="25sp" />
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/textView_time"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:focusable="false"
+                        android:clickable="false"/>
+
+                <TextView
+                        android:id="@+id/text_view_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        android:hint="2022.1.10"
+                        android:gravity="right"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:clickable="false"/>
+
+                <ImageButton
+                        android:id="@+id/button_select_date"
+                        android:src="@drawable/forward"
+                        android:background="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp" />
+
+
+            </TableRow>
+
+            <TableRow
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/textView_alarm"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:id="@+id/text_view_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:hint="10:30"
+                        android:gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:clickable="false"/>
+
+                <ImageButton
+                        android:id="@+id/button_select_alarm_time"
+                        android:src="@drawable/forward"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp" />
+            </TableRow>
+
+            <TableRow
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/textView_alarm_music"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:id="@+id/text_view_music"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:hint="死了都要爱.mp3"
+                        android:gravity="right"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:clickable="false"/>
+
+                <ImageButton
+                        android:id="@+id/button_select_music"
+                        android:src="@drawable/forward"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="同时提前半小时提醒"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+            <CheckBox
+                    android:id="@+id/button_alarm_in_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

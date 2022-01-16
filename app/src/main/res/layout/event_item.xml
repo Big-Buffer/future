@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top"
+            android:layout_marginStart="10dp">
+
+        <TableRow>
+
+            <TextView
+                    android:id="@+id/current_date_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="2021.12.1"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="距离时间还有:"
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+            <TextView
+                    android:id="@+id/diff_time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:hint="2天8时24分"
+                    android:textSize="15sp"
+                    android:textColor="@color/teal_200" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="晒被子去"
+            android:textSize="30sp"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/black"
+            android:layout_below="@+id/top"
+            tools:ignore="EllipsizeMaxLines" />
+
+
+</RelativeLayout>

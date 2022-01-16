@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_detail"
+        android:background="@color/white">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:background="#ffffff"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center" />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="130dp"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape_round"
+                android:layout_weight="5"
+                android:focusable="false"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                >
+
+            <TableRow android:layout_margin="5dp">
+
+                <TextView
+                        android:id="@+id/view_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow android:layout_margin="5dp">
+
+                <TextView
+                        android:id="@+id/view_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:textSize="35sp"
+                        android:textColor="@color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/button_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp" />
+
+            <ImageButton
+                    android:id="@+id/button_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

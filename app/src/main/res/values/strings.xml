@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">future</string>
+    <string name="dialog_hint">请输入内容</string>
+    <string name="textView_time">时间</string>
+    <string name="textView_alarm">提醒时间</string>
+    <string name="textView_alarm_music">提醒音乐</string>
+    <string name="detail">详情</string>
+    <string name="text_year">年</string>
+    <string name="text_month">月</string>
+    <string name="text_date">日</string>
+    <string name="text_hour">时</string>
+    <string name="text_minute">分</string>
+</resources>
